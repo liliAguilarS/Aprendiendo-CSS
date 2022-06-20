@@ -1,0 +1,226 @@
+/* *{
+    color: red; propiedad universal
+}*/
+ button{      
+    color:silver; /*propiedad de tipo puede ser cualquier etiqueta, button, h1, h2, p*/
+}
+
+.titulo-h2{
+  color: #3346FF; /* propiedad de tipo clase, se utiliza un punto antes de poner el nombre .titulo-he*/
+}
+
+#id-element{
+ color: #33FF4F; /*propiedad por ID, se pone un 3 para utilizarlo, solo tenemos que 
+ usaro para un elemento */
+
+}
+[atributo= "sii"]{
+   color: rebeccapurple; /*por atributo puede ser cualquier atributo*/
+}
+h5 p{
+  color: #FF33E3;   /*para seleccionar de manera decendiente le decimos a nuestro css que de estilo a nuestro elemento p
+    que esta dentro de nuestra etiqueta h5, tamnbien podemos modificar nuestro elemento p si esta 
+    dentro de una etiqueta h atravez de una clase, como 
+.titulo-h2 p { 
+    color: red;
+} */
+}
+h1:hover{
+    color: #B72DF0;/* propieda por pseudo clases, ative, hover, esta mas relacionado con los eventos, a nuestro texto se le da
+un color al momento de pasar el mouse sobre el texto*/
+}
+
+#color-green{ /*id*/
+    color:royalblue;
+}
+b:hover{ /*pseudo-clase*/
+    color:red ;
+}
+
+[atributo="este si"]{ /*atributo*/
+    color: #33A8FF;
+}
+h6 { /*elemento*/
+    color: #B72DF0;
+}
+
+.contact-form{/* nombre de la clase del div*/
+   font-size: 1px; /* como es el nombre inicial de la clase, por defecto los em valdran 16 pixeles cada unos
+   si tenemos 5em seria 80 px, ya que lo estamos multiplicando 16x5=80*/
+   margin: 10px 20px;
+}
+.contact-form__input--active{ /*nombre de la clase del input que esta dentro del div*/
+    /*font-size: 5em;*/
+    color: red;
+    margin: 10px 20px;
+}
+
+.btn {
+    display: inline; /*para que el boton pueda estar en linea con otro boton */
+    margin: 1rem 0px;
+    color: #fff;
+    background-image: linear-gradient(to right, #a70b0b, #5038d3, #d60841);
+    border-radius: 25px; /* es el borde del recuadro, depende de lo que queremos redondearlo*/
+    width: 20%; /* ancho del boton*/
+    height: 50px; /* altura del boton*/
+    font-size: 1.2rem; /* cambia las propiedades de la letra*/
+    border: none; /* para que el button no tenga borde*/
+    background-size: 200%; /*para que al pasar el raton encima del boton de una ilusion de color*/
+    transition: .5s; /* hace que la ilusion de color dure*/
+}
+
+h2{
+    background-color: salmon; /*color de fondo de nuestra etiqueta h2*/
+    display: inline-block; /* hace que no ocupe todo el espacio de pantalla si no que lo diminuya a un solo brolque*/
+    padding: 100px; /*  da espacio al texto dentro de la pagina, aplica en todo, los centrados dentro de la caja, botton, top, left, right*/
+   /* padding: 10px 50px; /*20px son para botton y top, y los 30px son para left y right*/
+   /* width: 300px; /* ancho del boton*/
+   /* height: 300px; */
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 15px; 
+    /*border: 3px solid #FF33E3; Es el borde de la caja 3px, con estilo de solid, y el color rosa #FF33E3*/
+    box-shadow: 2px 4px 10px 0px #000; /*nos permite darle sobra a la caja*/
+    text-shadow: 2px 2px 7px #fff;/*da sombra a la letra*/
+   /*transform: rotate(-45deg);  es para que nuestra caja rote a los grados que querramos*/
+}
+/*div{
+    display: block;
+    position: absolute;
+}*/
+/*div div {
+    height: 100px;
+    width: 100px;
+    background: yellow;
+    
+}*/
+.contenedor{
+    position: relative;
+    border: 4px solid red;
+    margin: 50px auto;
+    height: 450px;
+    width: 450px;
+    background: green;
+}
+.caja1{
+   /* width: 120px; /* ancho del boton
+    height: 120px; 
+    background: rgba(255, 0, 0, 0.849);
+   /* outline: 3px solid blueviolet; para saber en donde esta pocicionada la caja, "faltan que entendiera mas"*/
+    /*margin: auto; le estamos diciendo que nos centre la caja automaticamente
+    display: block;*/
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.caja2{
+    /*width: 120px; /* ancho del boton
+    height: 120px; 
+    background: rgb(0, 255, 0);
+    display: block;
+    position: relative; /*hacemos que el espacio se siga conservando
+    top: 60px; /*arriba
+    left: 20px; /*izquierda
+    z-index: 1;/*hace que la caja este ensima de la siguiente, en este caso encima de la 3*/
+    right: 0;
+}
+.caja3{
+    /*width: 120px; /* ancho del boton
+    height: 120px; 
+    background: rgb(20, 4, 90);
+    display: block;
+    position: absolute; 
+    /*opacity: 0.5;/*para opacar el color de la caja, baja su trans parencia
+    margin-left: 200px;*/
+    right: 0;
+    bottom: 0;
+ 
+}
+.caja4{
+  /*  width: 120px; /* ancho del boton
+    height: 120px; 
+    background: yellow;
+    display: block;*/
+    bottom: 0;
+}
+/*caja5{
+}*/
+
+/*body{
+    padding-top: 100px;
+}*/
+
+/*.caja-fixed{
+    font-size: 40px;/*es el tamaño de la letra
+    background: red;
+   /* position: fixed; /* hace que se pocisione en un lugar, de modo que si subimos o bajamos una pagina con el raton, este este estaable
+    position: sticky;/*se comporta como un fiexd pero en el lugar donde lo definimos, en este caso en el top de 2opx
+    opacity: 0.3;
+    top: 20px;
+}*/
+/*.conteiner2{
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    font-size: 40px;
+    border: 4px solid red;
+    background: #5fb7fa; 
+    font-weight: 100; /*especifica el peso o grueso de la letra.
+    overflow-x: scroll;
+    overflow-y: hidden;
+}*/
+.conteiner2{
+    margin: auto;
+    margin-top: 50px;
+    border: 4px solid red;
+    background: rosybrown;
+    width: 70%;
+    padding: 20px;
+}
+.conteiner2 img{
+    float: left; /* una de las maneras en que podemos ocupar el float en css es de esta manera */
+    width: 270px;
+    margin-right: 58px;
+    padding: 20px;
+    padding-top: 10px;
+}
+.texto::first-line{/*la cupamos para que solo se cambie la primer linea de nuestro texto, de modo que si la pantalla sea chica el texto principal siga siendo rojo*/
+    font-size: 30px;
+    color:#a70b0b;
+}
+.texto::first-letter{/*para que la primer letra del texto pueda tomar un tamaño distinto*/
+    color: #B72DF0;
+    font-size: 50px;
+}
+form{
+    margin: 100px auto;
+    display: block;
+    background-color: #555;
+    padding: 100px;
+    width: 50%;
+}
+input{
+    padding: 6px;
+    width: 100%;
+}
+input::placeholder{/*para poner letra que no se pueda editar dentro de un input*/
+    color: blue;
+}
+.texto::selection{/*para que al seleccionar texto se marque con color negro y letras blancas*/
+    color: #fff;
+    background-color: #000;
+}
+/*el before y el after así es como lo podemos ocupar*/
+p::before{
+    content: "me suscribi";
+    color: #fff;
+}
+p::after{
+    content: "todo tendencias";
+    color: #fff;
+}
+
